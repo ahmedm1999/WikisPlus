@@ -1,0 +1,51 @@
+{
+    "blogs": [
+        {
+            "blog_title": "What is React context API",
+            "by": "Ahmed Mukahal",
+            "share_date": "16th AUG 2020",
+            "reactions_number": "322",
+            "blog-cover_img": "-86.279118",
+            "type": "blog"
+        },
+        {
+            "blog_title": "How to Create Beautiful Gradients with JavaScript",
+            "by": "Ahmed Mukahal",
+            "share_date": "16th AUG 2020",
+            "reactions_number": "900",
+            "blog-cover_img": "-86.279118",
+            "type": "blog"
+        },
+        {
+            "blog_title": "Make Money As A Developer By Selling API",
+            "by": "Ahmed Mukahal",
+            "share_date": "16th AUG 2020",
+            "reactions_number": "20",
+            "blog_cover-img": "-86.279118",
+            "type": "blog"
+        },
+        {
+            "blog_title": "What are React context API",
+            "by": "Ahmed Mukahal",
+            "share_date": "16th AUG 2020",
+            "reactions_number": "10",
+            "blog_cover-img": "-86.279118",
+            "type": "blog"
+        }
+    ],
+    "tags": [
+        {
+            "tag_title": "JavaScript",
+            "tag_followers": "3000",
+            "type": "tag"
+        }
+    ],
+    "users": [
+        {
+            "user_title": "Ahmed Mukahal",
+            "user_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1620429143271/mSfIvUaAw.jpeg?w=500&h=500&fit=crop&crop=entropy&auto=compress",
+            "followers": "2000",
+            "type": "user"
+        }
+    ]
+}
