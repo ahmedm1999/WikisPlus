@@ -3,6 +3,7 @@ import { renderBlogsResult, renderUsersResult, renderTagsResult } from './render
 const search_input = document.getElementById("search-bar");
 const search_input_label = document.getElementById('search-input-label');
 var res_container = document.querySelector('.res-container');
+const search_nav = document.getElementById('search-nav-bar') ;
 
 // Search input onfocus
 const searchFocusing = () => {
@@ -42,11 +43,9 @@ const fetchData = () => {
         }));
     }).then(function (data) {
         // store the data to the allData Var
-        // console.log(data[0])
         allData['blog'] = data[0];
         allData['user'] = data[1];
         allData['tag'] = data[2];
-        console.log(allData)
     }).catch(function (error) {
         console.log(error);
     });
@@ -56,11 +55,12 @@ const filterSearchResult = (text, type) => {
     let matches = []
     if (text.length === 0) {
         res_container.classList.add('d-none');
+        search_nav.classList.add('d-none');
         return [];
     }
 
     matches = allData[type].filter(result => {
-        const regx = new RegExp(`^${text}`, 'gi');
+        const regx = new RegExp(`^${text}`, 'gi'); // We must work to improve our regular expretion
         return result[`${type}_title`].match(regx);
     })
     return matches;
@@ -71,20 +71,22 @@ const search = (text, type) => {
         case 'blog':
             renderBlogsResult(filterSearchResult(text, 'blog')); if (type !== 'all') break;
         case 'user':
-            renderBlogsResult(filterSearchResult(text, 'user')); if (type !== 'all') break;
+            renderUsersResult(filterSearchResult(text, 'user')); if (type !== 'all') break;
         case 'tag':
-            renderBlogsResult(filterSearchResult(text, 'tag')); if (type !== 'all') break;
+            renderTagsResult(filterSearchResult(text, 'tag')); if (type !== 'all') break;
     }
 }
 
 
 search_input.addEventListener('input', () => {
     res_container.classList.remove('d-none');
+    search_nav.classList.remove('d-none');
+    res_container.innerHTML = '';
     search(search_input.value, searchEvent);
 });
 
 for (let i = 0; i < search_option_bt.length; i++) {
     search_option_bt[i].addEventListener('click', () => {
-        filterSearchResult(search_input.value, search_option_bt[i].getAttribute('data-search'));
+        search(search_input.value, search_option_bt[i].getAttribute('data-search'));
     });
 }

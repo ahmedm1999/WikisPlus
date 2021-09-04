@@ -1,4 +1,4 @@
-/* @import url(index.css); */
+@import url(search-area.css);
 .stat-section, .section-content {
     background-color: var(--bg-panel);
     border-radius: 10px;
@@ -128,117 +128,31 @@
     border-color: var(--main-btn-background);
 }
 
-/* Search Area */
+/* Top tags */
 
-.search-section .section-content .serch-area-content{
-    position: relative;
-}
-.search-section .section-content .serch-area-content .search-input {
-    height: 5em;
-    border: none;
-    border-radius: 10px;
-    background-color: transparent;
-    padding: 20px;
-    outline: none;
-    color: var(--color-headings);
-    font-size: 17px;
-    font-weight: 600;
-}
-.search-section .section-content .serch-area-content .search-label {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    margin-top: 2em;
-    z-index: 0;
-    cursor: text;
-    user-select: none;
-    color: var(--color-text);
-    font-size: var(--sub-text-size);
-}
-.search-section .section-content .serch-area-content .search-label .fa-search {
-    margin-right: 5px;
-    font-size: 20px;
-    color: var(--main-btn-background);
-    font-weight: 200;
-}
-.search-section .section-content .serch-area-content .search-focus {
-    border: 1px solid var(--main-btn-background);
-}
-
-#search-res-container {
-    height: auto;
-    max-height: 500px;
-    overflow-y: scroll;
-}
-.search-res-nav {
-    background-color: var(--bg-panel);
-    border: var(--border);
-}
-.search-res-nav .search-option {
-    margin: 0 .3em;
-}
-.search-res-nav .search-option .search-option-bt {
-    color: var(--color-text);
-    background-color: var(--bg-hover);
-    border-radius: 10px;
-    border: none;
-    font-size: var(--sub-sub-text-size);
-    padding: .3rem .5rem;
-}
-.search-res-nav .search-option .active {
-    background-color: vaR(--main-btn-background);
-    color: #fff
-}
-
-.res-container .blog-res .blog-res-link {
-    text-decoration: none;
+.section-content .stat-section-body .top-tags .top-tag-link{
     display: inline-block;
-    padding: .2em 1em
-}
-.res-container .blog-res:hover {
-    background-color: var(--bg-hover);
-}
-.res-container .blog-res .blog-res-link .blog-sec .blog-title {
-    color: var(--color-headings);
-    font-size: var(--search-res-size);
-    margin:0 
-}
-
-.res-container .blog-res .blog-res-link .blog-sec .blog-auth {
-    color: var(--color-text);
-    margin: 0;
-    font-size: vaR(--sub-sub-text-size);
-}
-.res-container .blog-res .blog-res-link .blog-sec .blog-img {
     width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.search-rse-container .res-container .user-res .user-res-link {
-    display: inline-block;
-    padding: .2em 1em;
     text-decoration: none;
-    width: 100%;
 }
-.search-rse-container .res-container .user-res .user-res-link:hover {
+.section-content .stat-section-body .top-tags .top-tag-link:hover {
     background-color: var(--bg-hover);
 }
-.search-rse-container .res-container .user-res .user-res-link .user-sec .user-image {
+.section-content .stat-section-body .top-tags .top-tag-link .tag-tit {
+    line-height: 20px;
+}
+.section-content .stat-section-body .top-tags .top-tag-link .tag .tag-img {
     width: 3em;
     border-radius: 50%;
     object-fit: contain;
     margin-right: 10px;
 }
-.search-rse-container .res-container .user-res .user-res-link .user-sec .user-name {
+.section-content .stat-section-body .top-tags .top-tag-link .tag .tag-tit .tag-tit-txt {
     color: var(--color-headings);
-    font-weight: 600;
-    margin-left: 10px;
+    font-weight: var(--main-title-weight);
 }
-.search-rse-container .res-container .user-res .user-res-link .user-sec:nth-child(2) {
-    line-height: 20px;
-}
-.search-rse-container .res-container .user-res .user-res-link .user-sec .user-followers {
+
+.section-content .stat-section-body .top-tags .top-tag-link .tag .tag-tit .tag-followers {
     color: var(--color-text);
+    font-size: var(--sub-sub-text-size)
 }
-/*  */

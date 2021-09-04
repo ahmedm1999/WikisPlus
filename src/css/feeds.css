@@ -53,8 +53,7 @@
 
 /* REGESTERED USERS HEADER */
 
-.feeds-header .reg-header .header-tit .user-name-img-container .user-img
-,.prof-not-menu .user-menu-content .menu_items .menu_item .item .user-img {
+.feeds-header .reg-header .header-tit .user-name-img-container .user-img {
     width: 3em;
     object-fit: contain;
     border-radius: 50%;
@@ -62,27 +61,11 @@
 .feeds-header .reg-header .header-tit .user-name-img-container {
     text-decoration: none;
 }
-.feeds-header .reg-header .header-tit .user-name-img-container .user-name
-,.prof-not-menu .user-menu-content .menu_items .menu_item .item .user-name {
+.feeds-header .reg-header .header-tit .user-name-img-container .user-name {
     text-transform: capitalize;
     color: var(--color-headings) ;
     margin-left: 0.5em;
     font-size: var(--sub-title-size);
-}
-.prof-not-menu .user-menu-content .menu_items .menu_item .item .blogging-header {
-    color: #275df3 ;
-    font-weight: var(--main-title-weight);
-}
-.prof-not-menu .user-menu-content .menu_items .menu_item .item .blogging-txt {
-    color: var(--color-headings)
-}
-.prof-not-menu .user-menu-content .menu_items .menu_item .item .item-img {
-    width: 1.3em;
-}
-.prof-not-menu .user-menu-content .menu_items .menu_item .item .item-txt {
-    font-size: 1em;
-    margin-left: .2em;
-    color: var(--color-headings)
 }
 
 .posts-nav .posts-nav-tit {

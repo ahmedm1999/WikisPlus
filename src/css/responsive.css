@@ -97,6 +97,9 @@
     .main-menu-container {
         width: 100px;
     }
+    .p-left-25, .p-right-25 {
+        padding-left: 0 !important;
+    }
 }
 
 @media (max-width: 317px) {
